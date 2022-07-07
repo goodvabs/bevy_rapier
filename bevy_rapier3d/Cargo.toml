@@ -30,9 +30,7 @@ enhanced-determinism = [ "rapier3d/enhanced-determinism" ]
 
 [dependencies]
 
-# Modified for internal use. -vabs 22-06-27
-# bevy = { version = "0.7", default-features = false }
-bevy = { path = "../../bevy", default-features = false }
+bevy = { version = "0.7", path = "../../bevy", default-features = false }
 
 nalgebra = { version = "0.31", features = [ "convert-glam020" ] }
 # Don't enable the default features because we don't need the ColliderSet/RigidBodySet
@@ -43,6 +41,4 @@ log = "0.4"
 serde = { version = "1", features = [ "derive" ], optional = true}
 
 [dev-dependencies]
-# Modified for internal use. -vabs 22-06-27
-# bevy = { version = "0.7", default-features = false, features = ["x11"]}
-bevy = { path = "../../bevy", default-features = false, features = ["x11"] }
+bevy = { version = "0.7", path = "../../bevy", default-features = false, features = ["x11"] }
